@@ -12,12 +12,17 @@
       <div class="container">
         <h1 class="logo">UI Portfolio</h1>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#success-work">Blog</a></li>
+          <li><a href="#details">Contact</a></li>
+          <li>
+            <input type="text" class="search-bar" placeholder="Search..." />
+          </li>
+          <li>
+            <button class="mode-toggle" id="modeToggle">🌙</button>
+          </li>
           <li><button class="hire-btn">Hire Me</button></li>
         </ul>
       </div>
@@ -199,5 +204,19 @@
         <p>&copy; 2024 John Watson Portfolio. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      const modeToggle = document.getElementById("modeToggle");
+
+      modeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Toggle button icon
+        if (document.body.classList.contains("dark-mode")) {
+          modeToggle.textContent = "☀️";
+        } else {
+          modeToggle.textContent = "🌙";
+        }
+      });
+    </script>
   </body>
 </html>
