@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Watson Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -17,6 +18,7 @@
           <li><a href="#">Services</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Pages</a></li>
+           
           <li><a href="#">Contact</a></li>
           <li><button class="hire-btn">Hire Me</button></li>
         </ul>
@@ -25,7 +27,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-content">
+      <div class="container-hero">
         <div class="hero-text">
           <h2>Hi, I'm John Watson</h2>
           <h1>Web Developer</h1>
@@ -47,7 +49,7 @@
 
     <!-- About Section -->
     <section class="about">
-      <div class="container about-content">
+      <div class="container-about">
         <div class="about-image">
           <img src="images/profile.jpg" alt="John Watson" />
         </div>
@@ -59,9 +61,18 @@
             portfolio since 2016! Contact me and we will discuss your projects!
           </p>
           <div class="details">
-            <p><strong>Name:</strong> John Watson</p>
-            <p><strong>Email:</strong> example@mail.com</p>
-            <p><strong>Phone:</strong> +1 234 567 8901</p>
+            <div class="details-2">
+              <p><strong>Name:</strong> John Watson</p>
+              <p><strong>Email:</strong> johnwatson@mail.com</p>
+              <p><strong>Phone:</strong> +1 234 567 8901</p>
+              <p><strong>From:</strong>London, UK</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <span class="Follow-me">Follow me on:</span>
+            <a href="https://github.com/Yvonnee3" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/_.hun.i?igsh=ZnYyaDN0bGZjOWJ5&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            
           </div>
           <div class="about-buttons">
             <button class="btn">Hire Me</button>
@@ -73,8 +84,9 @@
 
     <!-- Services Section -->
     <section class="services">
-      <div class="container">
-        <h2 class="section-title">What I Do For You</h2>
+      <div class="service-1">
+        <h2>What I Do For You</h2>
+      </div>
         <div class="service-cards">
           <div class="service-card">
             <h3>Web Development</h3>
@@ -109,17 +121,24 @@
             creativity.
           </p>
           <div class="skills-bars">
-            <p>UI/UX Design</p>
-            <div class="bar"><span style="width: 90%"></span></div>
-
-            <p>Ideas & Technology</p>
-            <div class="bar"><span style="width: 85%"></span></div>
-
-            <p>Branding Design</p>
-            <div class="bar"><span style="width: 70%"></span></div>
-
-            <p>Responsive Web Design</p>
-            <div class="bar"><span style="width: 88%"></span></div>
+            <p class="skill-bar">UI/UX Design</p>
+            <div class="skill-container">
+              <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+           
+            <p class="skill-bar">Ideas & Technology</p>
+            <div class="skill-container">
+              <div class="bar"><span style="width: 80%"></span></div>
+            </div>
+           
+            <p class="skill-bar">Branding Design</p>
+            <div class="skill-container">
+              <div class="bar"><span style="width: 70%"></span></div>
+            </div>
+            <p class="skill-bar">Responsive Web Design</p>
+            <div class="skill-container">
+              <div class="bar"><span style="width: 88%"></span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -127,6 +146,10 @@
 
     <!-- Services + Statistics Section -->
     <section id="stats" class="stats-section">
+      <div class="image-s">
+        <img src="images/profile.jpg" alt="Featured Skills" />
+      </div>
+
       <div class="stats-grid">
         <div class="service">
           <h4>Web Development</h4>
@@ -154,25 +177,28 @@
         </div>
       </div>
 
+    </section>
+    <section class="stats">
       <div class="stats-numbers">
-        <div>
+        <div class="item">
           <h3>135</h3>
           <p>Finished Projects</p>
         </div>
-        <div>
+        <div class="item">
           <h3>225</h3>
           <p>Working Hours</p>
         </div>
-        <div>
+        <div class="item">
           <h3>115</h3>
           <p>Online Support</p>
         </div>
-        <div>
+        <div class="item">
           <h3>272</h3>
           <p>Happy Customers</p>
         </div>
       </div>
     </section>
+  
 
     <!-- My Success Work Gallery Section -->
     <section id="success-work" class="work-gallery">
@@ -197,6 +223,9 @@
     <footer class="footer">
       <div class="container">
         <p>&copy; 2024 John Watson Portfolio. All rights reserved.</p>
+        <a href="https://github.com/Yvonnee3" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/_.hun.i?igsh=ZnYyaDN0bGZjOWJ5&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+        
       </div>
     </footer>
   </body>
